@@ -1,0 +1,247 @@
+/*
+Project Name: Sarah Cabral
+Author: Moe Shahheidari
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Linking to custom fonts */
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/mariotext_iceland-webfont.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bebasneue';
+    src: url('../fonts/bebasneue.otf'); /*URL to font*/
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /*background-color: #606161;*/ /*for testing*/
+  background-color: #000;
+  color: #606161;
+  font-size: 26px;
+  line-height: 1.4;
+  font-family: 'typewriter','Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  background-color: #507A47;
+  padding: 20px 45px;
+  border-radius: 5px;
+  border: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/******************************************
+/* MENU STYLES
+/*******************************************/
+.desktopmenu ul {
+  /*background-color: #000;*/
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+.desktopmenu li {
+  display: inline;
+  margin-left: 25px;
+  color: blue;
+}
+.fixedmenu {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.fixedmenu ul {
+  background: #000;
+}
+.fixedmenu li {
+  color: red;
+}
+
+
+
+.mobilemenu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  /*top: 0;*/
+  z-index: 1;
+  margin-left: 10px;
+}
+.mobilemenu div {
+  display: none;
+  /*padding-top: 25px;*/
+}
+.mobilemenu a {
+  display: block;
+  padding-top: 10px;
+}
+#mobilemenubtn {
+  /*position: absolute;*/
+  /*top: 15px; */
+  /*right: 15px;*/
+  border: 0;
+  opacity: 0.7;
+  text-indent: 200%;
+  /*overflow: hidden;*/
+  background: rgb(255,0,0) url("../images/hb_menu.png") center no-repeat;
+  /*border: 1px solid #ddd;*/
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+}
+.mobilemenu .expanded {
+      transform: rotate(90deg);
+      /*transform: skew(10deg,10deg);*/
+      /*background-color: transparent;*/
+      /*border: 0;*/
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+.container { /* center the containers */
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  /*min-width: 200px;*/
+}
+header.container {
+  padding: 0;
+}
+header img {
+  opacity: 0.5;
+}
+#buy img {
+  width: 60%;
+  padding-left: 10%;
+}
+#buy h3{
+  position: absolute;
+  font-size: 20px;
+  width: 45%;
+  padding-top: 40px;
+  padding-left: 13%;
+  z-index: 0;
+}
+.buymenu {
+  position: relative;
+  /*left: 100px;*/ 
+  left: 6%;
+  top: 75px;
+  vertical-align: top;
+  display: inline-block;
+}
+.buymenu div {
+  display: none;
+  text-align: center;
+}
+.buymenu a {
+  display: block;
+  padding-top: 10px;
+  font-size: 20px;
+}
+#audio div {
+  vertical-align: top;
+  width: 45%;
+  display: inline-block;
+  text-align: center;
+  padding-left: 6%;
+  text-align: center;
+}
+#audio h2 {
+  font-family: 'bebasneue';
+  font-size: 40px;
+  color: #507A47;
+}
+#audio p {
+  font-size: 16px;
+}
+#video iframe {
+  margin-left: 4.5%;
+  vertical-align: top;
+}
+#shows {
+  display: none;
+}
+footer.container {
+  padding: 0 0 50px 0;
+}
+footer {
+  text-align: center;
+}
+footer li {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  
+}
+
+/******************************************
+/* MOBILE LAYOUTS
+/*******************************************/
+
+@media screen and (max-width: 768px) {
+  
+  .mobilemenu {
+    display: block;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  #buy h3{
+    font-size: 16px;
+  }
+
+}

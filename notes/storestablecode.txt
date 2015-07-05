@@ -1,0 +1,31 @@
+<!-- table for online store img links -->
+			<table>
+				<tr>
+					<td>
+						<a href="https://geo.itunes.apple.com/us/album/sarah-cabral-ep/id981381380?uo=6" target="new">
+						<img src="images/stores/itunes.png" alt="iTunes" width="115px" height="42px">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://play.google.com/store/music/album/Sarah_Cabral_Sarah_Cabral?id=Babb7sx4l5apjrqoelyrrodc45i" target="new">
+						<img src="images/stores/google_play.png" alt="Google Play" width="115px" height="42px">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="http://www.amazon.com/Sarah-Cabral/dp/B00VFL92L6/ref=sr_1_1?s=dmusc&ie=UTF8&qid=1435728570&sr=1-1&keywords=sarah+cabral" target="new">
+						<img src="images/stores/amazon_mp3.png" alt="Amazon MP3" width="115px" height="42px">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="http://www.cdbaby.com/cd/sarahcabral" target="new">
+						<img src="images/stores/cdbaby.png" alt="CDBaby" width="115px" height="42px">
+						</a>
+					</td>
+				</tr>
+			</table>
