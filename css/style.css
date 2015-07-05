@@ -56,7 +56,7 @@ body {
   /*background-color: #606161;*/ /*for testing*/
   background-color: #000;
   color: #606161;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.4;
   font-family: 'typewriter','Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -83,11 +83,18 @@ a {
   z-index: 1;
   width: 100%;
   text-align: center;
+  color: #ACACAC;
 }
 .desktopmenu li {
   display: inline;
   margin-left: 25px;
-  color: blue;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+.desktopmenu li:hover {
+  opacity: 0.4;
 }
 .fixedmenu {
   position: fixed;
@@ -98,11 +105,9 @@ a {
   background: #000;
 }
 .fixedmenu li {
-  color: red;
+  color: #606161;
+  font-weight: normal;
 }
-
-
-
 .mobilemenu {
   display: none;
   position: fixed;
@@ -127,15 +132,17 @@ a {
   opacity: 0.7;
   text-indent: 200%;
   /*overflow: hidden;*/
-  background: rgb(255,0,0) url("../images/hb_menu.png") center no-repeat;
+  background: rgb(172,172,172) url("../images/hb_menu.png") center no-repeat;
   /*border: 1px solid #ddd;*/
-  border-radius: 3px;
+  border-radius: 1px;
   background-size: 80%;
   width: 30px;
   height: 30px;
+  -webkit-transition: all 0.3s; /*safari*/
   transition: all 0.3s;
 }
 .mobilemenu .expanded {
+      -webkit-transform: rotate(90deg); /*safari*/
       transform: rotate(90deg);
       /*transform: skew(10deg,10deg);*/
       /*background-color: transparent;*/
@@ -146,7 +153,6 @@ a {
 /* LAYOUT
 /*******************************************/
 
-
 .container { /* center the containers */
   width: 100%;
   margin: 0 auto;
@@ -154,10 +160,10 @@ a {
   /*min-width: 200px;*/
 }
 header.container {
-  padding: 0;
+  padding: 0 0 25px 0;
 }
 header img {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 #buy img {
   width: 60%;
@@ -222,6 +228,7 @@ footer li {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 20px;
+  color: #507A47;
 }
 footer p {
   font-size: 13px;
