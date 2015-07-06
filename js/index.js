@@ -11,6 +11,10 @@ $(document).ready(function() {
 		$("#buymenubtn").siblings("div").slideToggle();
 	});
 
+	$("#buyimage").click(function() {
+		$("#buymenubtn").siblings("div").slideToggle();
+	});
+
 // CODE FOR DESKTOP MENU BAR TO SHIFT AND STICK
 	$(window).scroll(function () {
         if ($(this).scrollTop() > 489) {

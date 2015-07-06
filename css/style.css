@@ -66,7 +66,7 @@ a {
   color: inherit;
 }
 .button {
-  background-color: #507A47;
+  background-color: #DF7401;
   padding: 20px 45px;
   border-radius: 5px;
   border: 0;
@@ -212,7 +212,7 @@ header img {
 #audio h2 {
   font-family: 'bebasneue';
   font-size: 40px;
-  color: #507A47;
+  color: #DF7401;
 }
 #audio p {
   font-size: 16px;
@@ -235,7 +235,7 @@ footer li {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 20px;
-  color: #507A47;
+  color: #DF7401;
 }
 footer p {
   font-size: 13px;
@@ -251,7 +251,7 @@ footer p {
   position: relative;
   }
 #emailimage {
-  background-color: #507A47;
+  background-color: #DF7401;
   float: left;
   width: 48px;
   height: 50px;
@@ -262,7 +262,7 @@ footer p {
   left:33%;
 }
 #fbimage {
-  background-color: #507A47;
+  background-color: #DF7401;
   float: left;
   width: 48px;
   height: 50px;
@@ -341,7 +341,7 @@ footer p {
   #audio h2 {
     font-family: 'bebasneue';
     font-size: 30px;
-    color: #507A47;
+    color: #DF7401;
   }
   #audio p {
     font-size: 13px;
@@ -357,7 +357,7 @@ footer p {
     /*display: inline-block;*/
     /*margin-left: 10px;*/
     /*margin-bottom: 20px;*/
-    /*color: #507A47;*/
+    /*color: #DF7401;*/
   }
   footer p {
     font-size: 10px;
@@ -368,7 +368,7 @@ footer p {
     display: block;
     position: absolute;
     font-size: 13px;
-    color: #507A47;
+    color: #DF7401;
     z-index: 10;
     opacity: 0.7;
     top: 10px;
@@ -378,18 +378,18 @@ footer p {
     opacity: 1;
   }
   #emailimage {
-  background-color: #507A47;
+  background-color: #DF7401;
   width: 33px;
   height: 35px;
-  top: 15%;
+  top: 17%;
   left:32%;
   }
   #fbimage {
-    background-color: #507A47;
+    background-color: #DF7401;
     width: 31px;
     height: 33px;
     top: 20%;
-    left:60%;
+    left:62%;
   }
 /*END contact page styles for 480px*/
 
