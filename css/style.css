@@ -53,7 +53,7 @@ Author: Moe Shahheidari
 /*******************************************/
 
 body {
-  /*background-color: #606161;*/ /*for testing*/
+  /*background-color: red;*/ /*for testing*/
   background-color: #000;
   color: #606161;
   font-size: 22px;
@@ -111,10 +111,11 @@ a {
 .mobilemenu {
   display: none;
   position: fixed;
-  width: 100%;
+  /*width: 100%;*/
   /*top: 0;*/
   z-index: 1;
   margin-left: 10px;
+  margin-top: 7px;
 }
 .mobilemenu div {
   display: none;
@@ -123,6 +124,7 @@ a {
 .mobilemenu a {
   display: block;
   padding-top: 10px;
+  color: #ACACAC;
 }
 #mobilemenubtn {
   /*position: absolute;*/
@@ -159,8 +161,14 @@ a {
   padding: 50px 0;
   /*min-width: 200px;*/
 }
+hr {
+  margin: 0;
+  border-color: #606161; 
+  background-color: #606161; /*firefox*/
+  color: #606161; /*IE*/
+}
 header.container {
-  padding: 0 0 25px 0;
+  padding: 0;
 }
 header img {
   opacity: 0.4;
@@ -181,7 +189,7 @@ header img {
   position: relative;
   /*left: 100px;*/ 
   left: 6%;
-  top: 75px;
+  top: 70px;
   vertical-align: top;
   display: inline-block;
 }
@@ -200,7 +208,6 @@ header img {
   display: inline-block;
   text-align: center;
   padding-left: 6%;
-  text-align: center;
 }
 #audio h2 {
   font-family: 'bebasneue';
@@ -218,7 +225,7 @@ header img {
   display: none;
 }
 footer.container {
-  padding: 0 0 50px 0;
+  /*padding: 0 0 50px 0;*/
 }
 footer {
   text-align: center;
@@ -232,7 +239,44 @@ footer li {
 }
 footer p {
   font-size: 13px;
-  
+}
+
+/******************************************
+/* CONTACT PAGE
+/*******************************************/
+#backlink {
+  display: none;
+  }
+#contactheaderbg {
+  position: relative;
+  }
+#emailimage {
+  background-color: #507A47;
+  float: left;
+  width: 48px;
+  height: 50px;
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  top: 40%;
+  left:33%;
+}
+#fbimage {
+  background-color: #507A47;
+  float: left;
+  width: 48px;
+  height: 50px;
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  top: 45%;
+  left:69%;
+}
+#emailimage:hover {
+  opacity: 1;
+}
+#fbimage:hover {
+  opacity: 1;
 }
 
 /******************************************
@@ -240,7 +284,6 @@ footer p {
 /*******************************************/
 
 @media screen and (max-width: 768px) {
-  
   .mobilemenu {
     display: block;
   }
@@ -250,5 +293,104 @@ footer p {
   #buy h3{
     font-size: 16px;
   }
+  .buymenu a {
+    font-size: 16px;
+  }
+  #video iframe {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobilemenu {
+    display: none;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  #buy h3{
+    font-size: 13px;
+    width: 60%;
+  }
+  #buy img {
+    width: 100%;
+    padding: 0;
+  }
+  .buymenu {
+    width: 100%;
+    text-align: center;
+    position: static;
+    margin-top: 10px;
+    /*left: 100px;*/ 
+    /*left: 6%;*/
+    /*top: 70px;*/
+    /*vertical-align: top;*/
+    /*display: inline-block;*/
+  }
+  #audio div {
+    /*vertical-align: top;*/
+    width: 100%;
+    /*display: inline-block;*/
+    text-align: center;
+    /*padding-left: 6%;*/
+    padding: 0;
+  }
+  #audio iframe {
+    padding: 20px 15px 0 15px;
+  }
+  #audio h2 {
+    font-family: 'bebasneue';
+    font-size: 30px;
+    color: #507A47;
+  }
+  #audio p {
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  #video iframe {
+    height: 200px;
+    /*margin-left: 4.5%;
+    vertical-align: top;*/
+  }
+  footer li {
+    font-size: 13px;
+    /*display: inline-block;*/
+    /*margin-left: 10px;*/
+    /*margin-bottom: 20px;*/
+    /*color: #507A47;*/
+  }
+  footer p {
+    font-size: 10px;
+  }
+
+/*START contact page styles for 480px*/
+  #backlink {
+    display: block;
+    position: absolute;
+    font-size: 13px;
+    color: #507A47;
+    z-index: 10;
+    opacity: 0.7;
+    top: 10px;
+    left: 10px;
+  }
+  #backlink:hover {
+    opacity: 1;
+  }
+  #emailimage {
+  background-color: #507A47;
+  width: 33px;
+  height: 35px;
+  top: 15%;
+  left:32%;
+  }
+  #fbimage {
+    background-color: #507A47;
+    width: 31px;
+    height: 33px;
+    top: 20%;
+    left:60%;
+  }
+/*END contact page styles for 480px*/
 
 }

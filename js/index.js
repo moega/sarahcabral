@@ -1,21 +1,17 @@
 $(document).ready(function() {
 	console.log("JS file loaded and all DOMs ready");
 
-
+//CODE FOR MOBILE MENU ACTION ON CLICK
 	$(".mobilemenu").click(function() {
 		$("#mobilemenubtn").toggleClass("expanded").siblings("div").slideToggle();
 	});
 
-	$(".mobilemenulink").click(function() {
-		$("#mobilemenubtn").toggleClass("expanded").siblings("div").slideToggle(200);
-	});
-
-	$(".buymenu").hover(function() {
+// CODE FOR "BUY NOW" BUTTON
+	$(".buymenu").click(function() {
 		$("#buymenubtn").siblings("div").slideToggle();
 	});
 
-
-// CODE FOR MENU BAR TO SHIFT AND STICK
+// CODE FOR DESKTOP MENU BAR TO SHIFT AND STICK
 	$(window).scroll(function () {
         if ($(this).scrollTop() > 489) {
             $(".desktopmenu").addClass("fixedmenu");
