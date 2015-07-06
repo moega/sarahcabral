@@ -170,8 +170,10 @@ hr {
 header.container {
   padding: 0;
 }
-header img {
-  opacity: 0.4;
+#homeheaderbg {
+  opacity: 0.6;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 #buy img {
   width: 60%;
@@ -249,6 +251,7 @@ footer p {
   }
 #contactheaderbg {
   position: relative;
+  opacity: 0.5;
   }
 #emailimage {
   background-color: #DF7401;
@@ -260,6 +263,7 @@ footer p {
   left: 0;*/
   top: 40%;
   left:33%;
+  opacity: 0.6;
 }
 #fbimage {
   background-color: #DF7401;
@@ -271,6 +275,7 @@ footer p {
   left: 0;*/
   top: 45%;
   left:69%;
+  opacity: 0.6;
 }
 #emailimage:hover {
   opacity: 1;
@@ -308,24 +313,24 @@ footer p {
   .desktopmenu {
     display: none;
   }
+  #buy {
+    width: 100%;
+    text-align: center;
+  }
   #buy h3{
     font-size: 13px;
     width: 60%;
   }
   #buy img {
-    width: 100%;
+    width: 85%;
     padding: 0;
   }
+  .button {
+    padding:14px 27px;
+  }
   .buymenu {
-    width: 100%;
-    text-align: center;
     position: static;
     margin-top: 10px;
-    /*left: 100px;*/ 
-    /*left: 6%;*/
-    /*top: 70px;*/
-    /*vertical-align: top;*/
-    /*display: inline-block;*/
   }
   #audio div {
     /*vertical-align: top;*/
