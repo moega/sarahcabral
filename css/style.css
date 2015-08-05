@@ -58,6 +58,8 @@ body {
   /*background-repeat: no-repeat;*/
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   /*background-position: 70% 40%;*/
   /*background-color: red;*/ /*for testing*/
   color: #606161;
@@ -329,7 +331,7 @@ footer p {
 /*  #downbtn {
     display: none;
   }*/
-  #buy h3{
+  #buy h3 {
     font-size: 16px;
   }
   .buymenu a {
@@ -378,7 +380,7 @@ footer p {
     padding: 0;
   }
   #audio iframe {
-    padding: 20px 15px 0 15px;
+    padding: 50px 15px 0 15px;
   }
   #audio h2 {
     /*font-family: 'bebasneue';*/
