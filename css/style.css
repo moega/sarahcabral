@@ -57,10 +57,10 @@ body {
   background-image: url("../images/sc_dancing_with_mic-sm.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  /*background-position: 70% 40%;*/
   /*background-color: red;*/ /*for testing*/
   color: #606161;
   /*color: #941212;*/
@@ -343,6 +343,9 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
+  }
 /*  .mobilemenu {
     display: none;
   }*/
