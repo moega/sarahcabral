@@ -55,7 +55,7 @@ Author: Moe Shahheidari
 body {
   /* background: rgb(172,172,172) url("../images/hb_menu.png") center no-repeat*/;
   background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -343,6 +343,9 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+body {
+  background-attachment: fixed;
+}
 /*  .mobilemenu {
     display: none;
   }*/
