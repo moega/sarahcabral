@@ -53,9 +53,16 @@ Author: Moe Shahheidari
 /*******************************************/
 
 body {
+  /* background: rgb(172,172,172) url("../images/hb_menu.png") center no-repeat*/;
+  background-image: url("../images/sc_dancing_with_mic-sm.jpg");
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-position: 70% 40%;*/
   /*background-color: red;*/ /*for testing*/
-  background-color: #000;
   color: #606161;
+  /*color: #941212;*/
+  /*color: red;*/
   font-size: 22px;
   line-height: 1.4;
   font-family: 'typewriter','Open Sans', Helvetica, Arial, sans-serif;
@@ -66,7 +73,8 @@ a {
   color: inherit;
 }
 .button {
-  background-color: #DF7401;
+  /*background-color: #DF7401;*/
+  background-color: #EBEBEA;
   padding: 20px 45px;
   border-radius: 5px;
   border: 0;
@@ -83,15 +91,15 @@ a {
   z-index: 1;
   width: 100%;
   text-align: center;
-  color: #ACACAC;
+  /*color: #ACACAC;*/
 }
 .desktopmenu li {
   display: inline;
   margin-left: 25px;
   opacity: 1;
-  transition: opacity .3s ease-in-out;
+/*  transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
-  -webkit-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;*/
 }
 .desktopmenu li:hover {
   opacity: 0.4;
@@ -103,10 +111,19 @@ a {
 }
 .fixedmenu ul {
   background: #000;
+  opacity: 0.3;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+.fixedmenu ul:hover {
+  opacity: 0.6;
 }
 .fixedmenu li {
   color: #606161;
   font-weight: normal;
+  opacity: 1;
+  transition-property: opacity;
 }
 .mobilemenu {
   display: none;
@@ -124,7 +141,10 @@ a {
 .mobilemenu a {
   display: block;
   padding-top: 10px;
-  color: #ACACAC;
+  /*color: #ACACAC;*/
+}
+.mobilemenu a:hover {
+  opacity: 0.4;
 }
 #mobilemenubtn {
   /*position: absolute;*/
@@ -140,12 +160,12 @@ a {
   background-size: 80%;
   width: 30px;
   height: 30px;
-  -webkit-transition: all 0.3s; /*safari*/
   transition: all 0.3s;
+  -webkit-transition: all 0.3s; /*safari*/
 }
 .mobilemenu .expanded {
-      -webkit-transform: rotate(90deg); /*safari*/
       transform: rotate(90deg);
+      -webkit-transform: rotate(90deg); /*safari*/
       /*transform: skew(10deg,10deg);*/
       /*background-color: transparent;*/
       /*border: 0;*/
@@ -158,31 +178,42 @@ a {
 .container { /* center the containers */
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 75px 0;
   /*min-width: 200px;*/
 }
 hr {
-  margin: 0;
-  border-color: #606161; 
+  display: none;
+  margin: 10px;
+  /*border-color: #606161;*/
+  border-color: #E7E7E7; 
   background-color: #606161; /*firefox*/
   color: #606161; /*IE*/
 }
 header.container {
-  padding: 0;
+  padding: 0 0 40px 0;
+  height: 100vh;
 }
 #homeheaderbg {
-  opacity: 0.6;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  margin-left: 15%;
+  /*opacity: 0.5;*/
+/*  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
+}
+#downbtn {
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+  height: 35px;
+  width: 35px;
 }
 #buy img {
-  width: 60%;
+  width: 50%;
   padding-left: 10%;
 }
 #buy h3{
   position: absolute;
   font-size: 20px;
-  width: 45%;
+  width: 35%;
   padding-top: 40px;
   padding-left: 13%;
   z-index: 0;
@@ -212,9 +243,10 @@ header.container {
   padding-left: 6%;
 }
 #audio h2 {
-  font-family: 'bebasneue';
-  font-size: 40px;
-  color: #DF7401;
+  /*font-family: 'bebasneue';*/
+  font-size: 23px;
+  /*color: #DF7401;*/
+  color: #000;
 }
 #audio p {
   font-size: 16px;
@@ -222,9 +254,6 @@ header.container {
 #video iframe {
   margin-left: 4.5%;
   vertical-align: top;
-}
-#shows {
-  display: none;
 }
 footer.container {
   /*padding: 0 0 50px 0;*/
@@ -237,7 +266,8 @@ footer li {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 20px;
-  color: #DF7401;
+  /*color: #DF7401;*/
+  /*color: #000;*/
 }
 footer p {
   font-size: 13px;
@@ -254,7 +284,7 @@ footer p {
   opacity: 0.5;
   }
 #emailimage {
-  background-color: #DF7401;
+  background-color: #941212;
   float: left;
   width: 48px;
   height: 50px;
@@ -266,7 +296,7 @@ footer p {
   opacity: 0.6;
 }
 #fbimage {
-  background-color: #DF7401;
+  background-color: #941212;
   float: left;
   width: 48px;
   height: 50px;
@@ -288,6 +318,7 @@ footer p {
 /* MOBILE LAYOUTS
 /*******************************************/
 
+/*START contact page styles for 768px*/
 @media screen and (max-width: 768px) {
   .mobilemenu {
     display: block;
@@ -295,6 +326,9 @@ footer p {
   .desktopmenu {
     display: none;
   }
+/*  #downbtn {
+    display: none;
+  }*/
   #buy h3{
     font-size: 16px;
   }
@@ -307,12 +341,15 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
-  .mobilemenu {
+/*  .mobilemenu {
     display: none;
-  }
+  }*/
   .desktopmenu {
     display: none;
   }
+ /* #downbtn {
+    display: none;
+  }*/
   #buy {
     width: 100%;
     text-align: center;
@@ -344,9 +381,9 @@ footer p {
     padding: 20px 15px 0 15px;
   }
   #audio h2 {
-    font-family: 'bebasneue';
+    /*font-family: 'bebasneue';*/
     font-size: 30px;
-    color: #DF7401;
+    /*color: #DF7401;*/
   }
   #audio p {
     font-size: 13px;
@@ -367,6 +404,7 @@ footer p {
   footer p {
     font-size: 10px;
   }
+/*END contact page styles for 768px*/
 
 /*START contact page styles for 480px*/
   #backlink {

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	console.log("JS file loaded and all DOMs ready");
+	console.log("main js file loaded and all DOMs ready");
 
 $(".buymenu").click(toggleBuyMenu);
 $("#buyimage").click(toggleBuyMenu);
@@ -16,7 +16,7 @@ $("#buyimage").click(toggleBuyMenu);
 
 // CODE FOR DESKTOP MENU BAR TO SHIFT AND STICK
 	$(window).scroll(function () {
-        if ($(this).scrollTop() > 489) {
+        if ($(this).scrollTop() > 300) {
             $(".desktopmenu").addClass("fixedmenu");
         } else {
             $(".desktopmenu").removeClass("fixedmenu");
