@@ -301,11 +301,21 @@ footer img {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    /*background-image: url("../images/sc_mic_bw.jpg");
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: 0% 5%;*/
+    background-image: url("../images/sc_graffiti_girl.jpg");
+  }
 /*  .mobilemenu {
     display: none;
   }*/
   .desktopmenu {
     display: none;
+  }
+  #downbtn {
+
   }
  /* #downbtn {
     display: none;
