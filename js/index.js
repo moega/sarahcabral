@@ -23,4 +23,15 @@ $("#buyimage").click(toggleBuyMenu);
         }
     });
 
+//CODE FOR CHANGING ELEMENTS BASED ON WINDOWS WIDTH
+	$(window).on("resize", function() {
+		var windowWidth = $(window).width();
+		console.log(windowWidth);
+		// if (windowWidth <= 480) {
+		// 	document.getElementById("#downbtn").changeImage;
+		// }
+	});
+
+
+
 });
