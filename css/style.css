@@ -56,7 +56,7 @@ body {
   background-image: url("../images/sc_dancing_with_mic-sm.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
+  background-position: center;
   background-size: cover;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -208,6 +208,9 @@ header.container {
   padding: 0 0 40px 0;
   height: 100vh;
 }
+#scrolldowntxt {
+  display: none;
+}
 #downbtn {
   position: absolute;
   bottom: 30px;
@@ -314,6 +317,11 @@ footer img {
 }
 
 @media screen and (max-width: 480px) {
+body {
+  background-image: url("");
+  background-color: #D9D9D9;
+  font-size: 18px;
+}
 /*  .page-bg {
     position: fixed;
     top: 0;
@@ -330,6 +338,17 @@ footer img {
   }*/
   .desktopmenu {
     display: none;
+  }
+  #mobilemenubtn {
+    width: 22px;
+    height: 22px;
+  }
+  #scrolldowntxt {
+    display: inline;
+    position: absolute;
+    width: 20px;
+    bottom: 65px;
+    left: 44%;
   }
  /* #downbtn {
     display: none;
@@ -366,7 +385,7 @@ footer img {
   }
   #audio h2 {
     /*font-family: 'bebasneue';*/
-    font-size: 30px;
+    font-size: 22px;
     /*color: #DF7401;*/
   }
   #audio p {
@@ -380,10 +399,10 @@ footer img {
   }
   footer li {
     font-size: 13px;
-    /*display: inline-block;*/
+    display: list-item;
     /*margin-left: 10px;*/
     /*margin-bottom: 20px;*/
-    /*color: #DF7401;*/
+    /*color: #000;*/
   }
   footer p {
     font-size: 10px;
