@@ -189,7 +189,7 @@ a {
   left: 0;
   z-index: -1;
   position: fixed;
-  background-position: 50% 0;
+  background-position: center;
 }
 .container { /* center the containers */
   width: 100%;
@@ -320,10 +320,9 @@ footer img {
     top: 0;
     right: 0;
     left: 0;
-    /*height: 1707px;*/
     height: 734px;
     background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-    background-position: 50% 0;
+    background-position: right;
     background-repeat: no-repeat;
     z-index: -1;
   }
