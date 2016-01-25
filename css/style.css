@@ -53,21 +53,15 @@ Author: Moe Shahheidari
 /*******************************************/
 
 body {
-  background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   /*height: 734px;*/
   /*background-color: red;*/ /*for testing*/
-  color: #606161;
+  /*color: #606161;*/
+  color: white;
   /*color: #941212;*/
   /*color: red;*/
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.4;
-  font-family: 'typewriter','Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'bebasneue','typewriter','Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 a {
@@ -133,8 +127,10 @@ a {
   /*width: 100%;*/
   /*top: 0;*/
   z-index: 1;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   margin-top: 7px;
+  width: 100%;
+  text-align: center;
 }
 .mobilemenu div {
   display: none;
@@ -142,11 +138,14 @@ a {
 }
 .mobilemenu a {
   display: block;
+  background-color: black;
+  padding-bottom: 20px;
   padding-top: 10px;
   /*color: #ACACAC;*/
 }
 .mobilemenu a:hover {
-  opacity: 0.4;
+  /*opacity: 0.4;*/
+  color: #2E2E2E;
 }
 #mobilemenubtn {
   /*position: absolute;*/
@@ -204,72 +203,6 @@ hr {
   background-color: #606161; /*firefox*/
   color: #606161; /*IE*/
 }
-header.container {
-  padding: 0 0 40px 0;
-  height: 100vh;
-}
-#scrolldowntxt {
-  display: none;
-}
-#downbtn {
-  position: absolute;
-  bottom: 30px;
-  left: 45%;
-  height: 35px;
-  width: 35px;
-}
-#buy img {
-  width: 50%;
-  padding-left: 10%;
-}
-#buy h3{
-  position: absolute;
-  font-size: 20px;
-  width: 35%;
-  padding-top: 40px;
-  padding-left: 13%;
-  z-index: 0;
-}
-.buymenu {
-  position: relative;
-  /*left: 100px;*/ 
-  left: 6%;
-  top: 70px;
-  vertical-align: top;
-  display: inline-block;
-}
-.buymenu div {
-  display: none;
-  text-align: center;
-}
-.buymenu a {
-  display: block;
-  padding-top: 10px;
-  font-size: 20px;
-}
-#audio div {
-  vertical-align: top;
-  width: 45%;
-  display: inline-block;
-  text-align: center;
-  padding-left: 6%;
-}
-#audio h2 {
-  /*font-family: 'bebasneue';*/
-  font-size: 23px;
-  /*color: #DF7401;*/
-  color: #000;
-}
-#audio p {
-  font-size: 16px;
-}
-#video div {
-  width: 45%;
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  padding-left: 6%;
-}
 footer.container {
   /*padding: 0 0 50px 0;*/
 }
@@ -297,137 +230,24 @@ footer img {
 /* MOBILE LAYOUTS
 /*******************************************/
 
-/*START contact page styles for 768px*/
+/*START page styles for 768px*/
 @media screen and (max-width: 768px) {
-   body {
-    background-image: url("");
-    background-color: #D9D9D9;
-  }
   .mobilemenu {
     display: block;
   }
   .desktopmenu {
     display: none;
   }
-/*  #downbtn {
-    display: none;
-  }*/
-  header {
-    background-image: url("../images/sc_mic_bw.jpg");
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center;
-    background-size: cover;  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    opacity: 0.5;
-  }
-  #buy h3 {
-    font-size: 16px;
-  }
-  .buymenu a {
-    font-size: 16px;
-  }
-  #video div {
-    width: 100%;
-    display: inline;
-    /*text-align: center;*/
-    /*padding-left: 6%;*/
-    padding: 0;
-  }
-  #video iframe {
-    padding: 30px 50px 0 50px;
-  }
 }
 
+/*START page styles for 480px*/
 @media screen and (max-width: 480px) {
-body {
-  background-image: url("");
-  background-color: #D9D9D9;
-  font-size: 18px;
-}
-/*  .page-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 734px;
-    background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }*/
-/*  .mobilemenu {
+/*  .desktopmenu {
     display: none;
   }*/
-  .desktopmenu {
-    display: none;
-  }
   #mobilemenubtn {
-    width: 22px;
-    height: 22px;
-  }
-  #scrolldowntxt {
-    display: inline;
-    position: absolute;
-    width: 20px;
-    bottom: 65px;
-    left: 44%;
-  }
- /* #downbtn {
-    display: none;
-  }*/
-  #buy {
-    width: 100%;
-    text-align: center;
-  }
-  #buy h3{
-    font-size: 13px;
-    width: 60%;
-  }
-  #buy img {
-    width: 85%;
-    padding: 0;
-  }
-  .button {
-    padding:14px 27px;
-  }
-  .buymenu {
-    position: static;
-    margin-top: 10px;
-  }
-  #audio div {
-    /*vertical-align: top;*/
-    width: 100%;
-    /*display: inline-block;*/
-    text-align: center;
-    /*padding-left: 6%;*/
-    padding: 0;
-  }
-  #audio iframe {
-    padding: 50px 15px 0 15px;
-  }
-  #audio h2 {
-    /*font-family: 'bebasneue';*/
-    font-size: 22px;
-    /*color: #DF7401;*/
-  }
-  #audio p {
-    font-size: 13px;
-    margin: 0 10px;
-  }
-  #video div {
-    width: 100%;
-    display: inline;
-    padding: 0;
-  }
-  #video iframe {
-    padding: 30px 15px 0 15px;
-  }
-  #video iframe {
-    /*height: 200px;*/
-/*    margin-left: 4.5%;
-    vertical-align: top;*/
+    width: 25px;
+    height: 25px;
   }
   footer li {
     font-size: 13px;
@@ -439,6 +259,5 @@ body {
   footer p {
     font-size: 10px;
   }
-/*END contact page styles for 768px*/
 
 }
