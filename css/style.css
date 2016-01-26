@@ -98,7 +98,7 @@ a {
   -webkit-transition: opacity .3s ease-in-out;*/
 }
 .desktopmenu li:hover {
-  opacity: 0.4;
+  opacity: 0.02;
 }
 .fixedmenu {
   position: fixed;
@@ -106,20 +106,20 @@ a {
   z-index: 10;
 }
 .fixedmenu ul {
-  background: #000;
-  opacity: 0.3;
-  transition: opacity .5s ease-in-out;
+  background: black;
+  /*opacity: 0.3;*/
+/*  transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;*/
 }
-.fixedmenu ul:hover {
-  opacity: 0.6;
-}
+/*.fixedmenu ul:hover {
+  opacity: 0.2;
+}*/
 .fixedmenu li {
-  color: #606161;
-  font-weight: normal;
+  /*color: #606161;*/
+  /*font-weight: normal;*/
   opacity: 1;
-  transition-property: opacity;
+/*  transition-property: opacity;*/
 }
 .mobilemenu {
   display: none;
@@ -192,7 +192,7 @@ a {
 .container { /* center the containers */
   width: 100%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 150px 0;
   /*min-width: 200px;*/
 }
 hr {
@@ -209,21 +209,25 @@ footer.container {
 footer {
   text-align: center;
 }
+footer ul {
+  border: 5px solid black;
+  background-color: black;
+}
 footer li {
-  font-size: 16px;
-  display: inline-block;
-  margin-left: 10px;
+  font-size: 20px;
+  display: inline;
+  margin-left: 30px;
   margin-bottom: 20px;
   /*color: #DF7401;*/
   /*color: #000;*/
 }
 footer p {
-  font-size: 13px;
+  font-size: 14px;
 }
 footer img {
   margin-top: 35px;
-  width: 80px;
-  height: 200px;
+  width: 150px;
+  height: 310px;
 }
 
 /******************************************

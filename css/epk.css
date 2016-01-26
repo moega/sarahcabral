@@ -2,24 +2,29 @@
 /* BASE STYLES
 /*******************************************/
 body {
-  background-color: #D8D8D8;
+  background-color: #000;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+header a {
+  margin-left: 20px;
+}
 #bio p {
   font-size: 2.5vw;
   padding: 0 100px 0 100px;
   /*text-align: center;*/
+}
 
-}/******************************************
+/******************************************
 /* MOBILE LAYOUTS
 /*******************************************/
 
 /*START page styles for 768px*/
 @media screen and (max-width: 768px) {
+
   #bio p {
   font-size: 3vw;
   padding: 0 50px 0 50px;
@@ -27,7 +32,12 @@ body {
   body {
     background-color: black;
   }
+}
+
 /*START page styles for 480px*/
 @media screen and (max-width: 480px) {
 
+  footer li {
+  margin-left: 0;
+  }
 }
