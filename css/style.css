@@ -204,7 +204,7 @@ hr {
   color: #606161; /*IE*/
 }
 footer.container {
-  /*padding: 0 0 50px 0;*/
+  padding: 40px 0 0 0;
 }
 footer {
   text-align: center;
@@ -217,15 +217,18 @@ footer li {
   font-size: 20px;
   display: inline;
   margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 20px;
   /*color: #DF7401;*/
   /*color: #000;*/
 }
 footer p {
   font-size: 14px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 footer img {
-  margin-top: 35px;
+  margin-top: 0;
   width: 150px;
   height: 310px;
 }
@@ -261,7 +264,11 @@ footer img {
     /*color: #000;*/
   }
   footer p {
-    font-size: 10px;
+    font-size: 8px;
+  }
+  footer img {
+    width: 105px;
+    height: 217px;
   }
 
 }
