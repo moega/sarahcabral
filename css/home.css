@@ -44,9 +44,10 @@ header.container {
 #downbtn {
   position: absolute;
   bottom: 30px;
-  left: 45%;
   height: 45px;
   width: 35px;
+  text-align: center;
+  margin: 0 50% 0 50%;
 }
 /*#buy {
   margin-bottom: 200px;
