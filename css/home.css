@@ -45,7 +45,7 @@ header.container {
   position: absolute;
   bottom: 30px;
   left: 45%;
-  height: 35px;
+  height: 45px;
   width: 35px;
 }
 /*#buy {
@@ -212,7 +212,7 @@ body {
     z-index: -1;
   }*/
     #scrolldowntxt {
-    display: inline;
+    display: none;
     position: absolute;
     width: 20px;
     bottom: 65px;
