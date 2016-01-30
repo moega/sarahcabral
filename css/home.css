@@ -71,10 +71,10 @@ header.container {
 }
 #buy ul {
   position: relative;
-  margin: 65px 0 0 30px;
+  margin: 65px 5% 0 20%;
   z-index: 0;
-  margin-left: 20%;
-  margin-right: 5%;
+/*  margin-left: 20%;
+  margin-right: 5%;*/
 }
 
 /*********************************/
@@ -127,7 +127,6 @@ header.container {
   /*padding-left: 6%;*/
   margin-bottom: 150px;
 }
-
 #footer {
   position: absolute;
 }
@@ -165,6 +164,9 @@ header.container {
     -moz-background-size: cover;
     opacity: 1;
   }
+  #buy.container {
+    padding-top: 75px;
+  }
   #buyimage {
     width: 50%;
   }
@@ -176,6 +178,9 @@ header.container {
   }
   .buymenu a {
     font-size: 16px;
+  }
+  #video.container {
+    padding-top: 50px;
   }
   #video div {
     width: 100%;
@@ -227,14 +232,18 @@ body {
     margin-bottom: 0;
   }
   #buy ul {
-    margin: 30px 5% 0 5%;
+    margin: 0 5% 0 5%;
+  }
+  #buy li img {
+    width: 100px;
+    height: auto;
   }
   #buy h3{
     font-size: 13px;
     width: 60%;
   }
   #buyimage {
-    width: 70%;
+    width: 60%;
     padding: 0;
   }
   .button {
