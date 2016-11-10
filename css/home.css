@@ -3,8 +3,7 @@
 /*******************************************/
 
 body {
-  /*background-image: url("../images/sc_dancing_with_mic.jpg");*/
-  background-image: url("../images/whitemic-dark.jpg");
+  background-image: url("../images/sc_dancing_with_mic.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -119,7 +118,7 @@ header.container {
   padding-bottom: 50px;
 }
 #video div {
-  width: 100%;
+  width: 65%;
   height: 180px;
   vertical-align: top;
   /*display: inline-block;*/
@@ -152,10 +151,11 @@ header.container {
   body {
     background-image: url("");
     /*background-color: #D9D9D9;*/
-    background-color: black;
+    /*background-color: #e7e7e7;*/
+    background-color: #D3D3D5;
   }
   header {
-    background-image: url("../images/whitemic-dark.jpg");
+    background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
     background-repeat: no-repeat;
     background-attachment: local;
     background-position: center;
@@ -183,7 +183,7 @@ header.container {
     padding-top: 50px;
   }
   #video div {
-    width: 100%;
+    width: 60%;
     display: inline;
     /*text-align: center;*/
     /*padding-left: 6%;*/
@@ -274,7 +274,7 @@ body {
     margin: 0 10px;
   }
   #video div {
-    width: 100%;
+    width: 65%;
     display: inline;
     padding: 0;
   }
@@ -290,5 +290,7 @@ body {
   footer li {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
