@@ -34,8 +34,8 @@ a {
   background-position: center;
 }*/
 header.container {
-  padding: 0 0 40px 0;
-  height: 100vh;
+  padding: 7% 0 0 0;
+  /*height: 100vh;*/
 }
 #scrolldowntxt {
   display: none;
@@ -48,17 +48,36 @@ header.container {
   text-align: center;
   margin: 0 50% 0 50%;
 }
-/*#buy {
-  margin-bottom: 200px;
-}*/
+#bio.container {
+  text-align: center;
+  margin: 200px 0 0 0;
+}
+#bio img {
+  width: 80%;
+  opacity: 0.3;
+}
+#quote {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 170px 28% 0 28%;
+}
+#biotxt {
+  text-align: justify;
+  font-size: 1.5vw;
+  padding: 0 25% 0 25%;
+}
+/*********************************/
+/*********************************/
+/*AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS BELOW
 #buy {
+  visibility: hidden;
   margin-bottom: 150px;
 }
 #buyimage {
   width: 35%;
   position: absolute;
   margin-left: 40%;
-  /*padding-left: 10%;*/
+  /*padding-left: 10%;
 }
 #buy h3 {
   position: relative;
@@ -73,14 +92,11 @@ header.container {
   margin: 65px 5% 0 20%;
   z-index: 0;
 /*  margin-left: 20%;
-  margin-right: 5%;*/
+  margin-right: 5%;
 }
-
-/*********************************/
-/*REMOVED*/
 .buymenu {
   position: relative;
-  /*left: 100px;*/ 
+  /*left: 100px;
   left: 6%;
   top: 70px;
   vertical-align: top;
@@ -103,41 +119,44 @@ header.container {
   padding-left: 6%;
 }
 #audio h2 {
-  /*font-family: 'bebasneue';*/
+  /*font-family: 'bebasneue';
   font-size: 23px;
-  /*color: #DF7401;*/
+  /*color: #DF7401;
   color: #000;
 }
 #audio p {
   font-size: 16px;
 }
-/*END REMOVED*/
+AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
+/*********************************/
 /*********************************/
 
 #video.container {
-  padding-bottom: 50px;
+  margin: 175px 0 0 0;
 }
 #video div {
-  width: 65%;
-  height: 180px;
+  width: 60%;
+  /*height: 200px;*/
   vertical-align: top;
-  /*display: inline-block;*/
-  text-align: center;
-  /*padding-left: 6%;*/
-  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
 }
+#photos.container {
+  margin: 175px 0 0 0;
+}
+#photos {
+  text-align: center;
+}
+#photos img {
+  max-width:50%;
+  height: auto;
+}
+
 #footer {
   position: absolute;
 }
-#joanflowers {
-  text-align: right;
-  /*margin: 0;*/
-}
-#joanflowers img {
-  width: 180px;
-  height: 220px;
-  margin: 70px 80px 0 50px;
-  opacity: 0.6;
+
 }
 
 /******************************************
@@ -164,38 +183,18 @@ header.container {
     -moz-background-size: cover;
     opacity: 1;
   }
-  #buy.container {
-    padding-top: 75px;
   }
-  #buyimage {
-    width: 50%;
-  }
-  #buy h3 {
-    font-size: 16px;
-  }
-  #buy ul {
-    margin: 30px 5% 0 10%;
-  }
-  .buymenu a {
-    font-size: 16px;
-  }
-  #video.container {
-    padding-top: 50px;
-  }
-  #video div {
-    width: 60%;
-    display: inline;
-    /*text-align: center;*/
-    /*padding-left: 6%;*/
-    padding: 0;
-  }
-  #video iframe {
-    padding: 30px 50px 0 50px;
-  }
-  #joanflowers {
-    display: none;
-  }
+/*#video.container {
+  margin: 175px 0 0 0;
 }
+#video div {
+  width: 300px;
+  height: 200px;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}*/
 
 /*********************************/
 /*START page styles for 480px*/
@@ -204,7 +203,27 @@ header.container {
 body {
   background-image: url("");
   /*background-color: #D9D9D9;*/
-  font-size: 18px;
+  font-size: 10px;
+}
+#bio.container {
+  text-align: center;
+  margin-top: 100px;
+}
+#quote{
+  padding: 65px 18% 0 18%;
+}
+#biotxt{
+  padding: 0 15% 0 15%;
+}
+#video.container{
+  margin-top: 40px;
+}
+#video div {
+  width: 75%;
+  height: auto;
+}
+#photos.container {
+  margin: 90px 0 0 0;
 }
 /*  .page-bg {
     position: fixed;
@@ -217,80 +236,5 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
   }*/
-    #scrolldowntxt {
-    display: none;
-    position: absolute;
-    width: 20px;
-    bottom: 65px;
-    left: 44%;
-  }
-/*  #buy {
-    width: 100%;
-    text-align: center;
-  }*/
-  #buy {
-    margin-bottom: 0;
-  }
-  #buy ul {
-    margin: 0 5% 0 5%;
-  }
-  #buy li img {
-    width: 100px;
-    height: auto;
-  }
-  #buy h3{
-    font-size: 13px;
-    width: 60%;
-  }
-  #buyimage {
-    width: 60%;
-    padding: 0;
-  }
-  .button {
-    padding:14px 27px;
-  }
-  .buymenu {
-    position: static;
-    margin-top: 10px;
-  }
-  #audio div {
-    /*vertical-align: top;*/
-    width: 100%;
-    /*display: inline-block;*/
-    text-align: center;
-    /*padding-left: 6%;*/
-    padding: 0;
-  }
-  #audio iframe {
-    padding: 50px 15px 0 15px;
-  }
-  #audio h2 {
-    /*font-family: 'bebasneue';*/
-    font-size: 22px;
-    /*color: #DF7401;*/
-  }
-  #audio p {
-    font-size: 13px;
-    margin: 0 10px;
-  }
-  #video div {
-    width: 65%;
-    display: inline;
-    padding: 0;
-  }
-  #video iframe {
-    padding: 30px 15px 10px 15px;
-  }
-  #video iframe {
-    /*height: 200px;*/
-/*    margin-left: 4.5%;
-    vertical-align: top;*/
-  }
-  
-  footer li {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+
 }
