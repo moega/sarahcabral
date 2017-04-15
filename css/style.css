@@ -100,7 +100,7 @@ a {
   -webkit-transition: opacity .3s ease-in-out;*/
 }
 .desktopmenu li:hover {
-  opacity: 0.03;
+  opacity: 0.05;
 }
 
 /******************************************
@@ -135,7 +135,7 @@ footer img {
 /****START page styles for 768px****/
 @media screen and (max-width: 768px) {
   body {
-    font-size: 13px;
+    /*font-size: 14px;*/
     /*background-image: url("");*/
     /*background-color: #D9D9D9;*/
     /*background-color: #e7e7e7;*/
@@ -152,7 +152,7 @@ footer img {
       opacity: 1;
     }*/
   .desktopmenu li {
-    font-size: 13px;
+    /*font-size: 14px;*/
   }
   footer.container {
     margin-top: 90px;
@@ -168,16 +168,6 @@ footer img {
 
 /****START page styles for 480px****/
 @media screen and (max-width: 480px) {
-  body {
-    background-image: url("");
-    /*background-color: #D9D9D9;*/
-    font-size: 3.5vw;
-  }
-
-/*  #mobilemenubtn {
-    width: 25px;
-    height: 25px;
-  }*/
   .desktopmenu ul {
     text-align: center;
   }

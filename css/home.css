@@ -134,7 +134,7 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   text-align: center;
 }
 #photos img {
-  max-width:50%;
+  max-width:40%;
   height: auto;
 }
 #footer {
@@ -183,8 +183,11 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   #bio.container {
     margin-top: 100px;
   }
+/*  #bio img {
+    display: none;
+  }*/
   #quote{
-    padding: 65px 18% 0 18%;
+    padding: 150px 18% 0 18%;
   }
   #quote{
     font-size: 3.5vw;
