@@ -1,21 +1,6 @@
 /******************************************
-/* BASE STYLES
+/* ADJUSTMENTS ONLY FOR INDEX.HTML HOMEPAGE
 /*******************************************/
-
-body {
-  background-image: url("../images/sc_dancing_with_mic.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -68,7 +53,7 @@ header.container {
 }
 /*********************************/
 /*********************************/
-/*AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS BELOW
+/*AUDIO SECTION, BUY SECTION, AND MENU BUTTONS REMOVED - CSS BELOW
 #buy {
   visibility: hidden;
   margin-bottom: 150px;
@@ -135,8 +120,8 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   margin: 175px 0 0 0;
 }
 #video div {
-  width: 60%;
-  /*height: 200px;*/
+  width: 30%;
+  height: auto;
   vertical-align: top;
   margin-left: auto;
   margin-right: auto;
@@ -152,89 +137,69 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   max-width:50%;
   height: auto;
 }
-
 #footer {
   position: absolute;
-}
-
 }
 
 /******************************************
 /* MOBILE LAYOUTS
 /*******************************************/
 
-/*********************************/
-/*START page styles for 768px*/
-/*********************************/
+/****START page styles for 768px****/
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url("");
-    /*background-color: #D9D9D9;*/
-    /*background-color: #e7e7e7;*/
-    background-color: #D3D3D5;
-  }
-  header {
-    background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center;
-    background-size: cover;  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    opacity: 1;
-  }
-  }
-/*#video.container {
-  margin: 175px 0 0 0;
-}
-#video div {
-  width: 300px;
-  height: 200px;
-  vertical-align: top;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-}*/
-
-/*********************************/
-/*START page styles for 480px*/
-/*********************************/
-@media screen and (max-width: 480px) {
-body {
-  background-image: url("");
-  /*background-color: #D9D9D9;*/
-  font-size: 10px;
-}
-#bio.container {
-  text-align: center;
-  margin-top: 100px;
-}
-#quote{
-  padding: 65px 18% 0 18%;
-}
-#biotxt{
-  padding: 0 15% 0 15%;
-}
-#video.container{
-  margin-top: 40px;
-}
-#video div {
-  width: 75%;
-  height: auto;
-}
-#photos.container {
-  margin: 90px 0 0 0;
-}
-/*  .page-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 734px;
-    background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    z-index: -1;
+  /*#video.container {
+    margin: 175px 0 0 0;
   }*/
+  
+  #bio.container {
+    margin-top: 100px;
+  }
+  #quote{
+    padding: 80px 20% 0 20%;
+  }
+  #quote{
+    font-size: 2vw;
+  }
+  #biotxt{
+    padding: 0 18% 0 18%;
+    font-size: 2vw;
+  }
+  #video.container{
+    margin-top: 75px;
+  }
+  #video div {
+    width: 50%;
+  }
+  #photos.container {
+    margin: 150px 0 0 0;
+  }
+  #photos img {
+    max-width:40%;
+  }
+}
 
+/****START page styles for 480px****/
+@media screen and (max-width: 480px) {
+  #bio.container {
+    margin-top: 100px;
+  }
+  #quote{
+    padding: 65px 18% 0 18%;
+  }
+  #quote{
+    font-size: 3.5vw;
+  }
+  #biotxt{
+    padding: 0 15% 0 15%;
+    font-size: 3.5vw;
+  }
+  #video.container{
+    margin-top: 40px;
+  }
+  #video div {
+    width: 65%;
+  }
+  #photos.container {
+    margin: 120px 0 0 0;
+  }
 }

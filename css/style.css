@@ -51,14 +51,16 @@ Author: Moe Shahheidari
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 body {
-  /*height: 734px;*/
+  background-image: url("../images/sc_dancing_with_mic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   /*background-color: red;*/ /*for testing*/
-  /*color: #606161;*/
   color: black;
-  /*color: #941212;*/
-  /*color: red;*/
   font-size: 16px;
   line-height: 1.4;
   font-family: 'typewriter','bebasneue','Open Sans', Helvetica, Arial, sans-serif;
@@ -100,103 +102,16 @@ a {
 .desktopmenu li:hover {
   opacity: 0.03;
 }
-/*.fixedmenu {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  opacity: 0.3;
-}
-.fixedmenu ul {
-  background: black; */
-  /*opacity: 0.3;*/
-/*  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;*/
-}
-/*.fixedmenu ul:hover {
-  opacity: 0.2;
-}*/
-.fixedmenu li {
-  /*color: #606161;*/
-  /*font-weight: normal;*/
-  opacity: 1;
-/*  transition-property: opacity;*/
-}
-.mobilemenu {
-  display: none;
-  position: fixed;
-  /*width: 100%;*/
-  /*top: 0;*/
-  z-index: 1;
-  /*margin-left: 10px;*/
-  margin-top: 7px;
-  width: 100%;
-  text-align: center;
-}
-.mobilemenu div {
-  display: none;
-  /*padding-top: 25px;*/
-}
-.mobilemenu a {
-  display: block;
-  background-color: black;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  opacity: 0.3;
-  /*color: #ACACAC;*/
-}
-.mobilemenu a:hover {
-  /*opacity: 0.4;*/
-  color: #2E2E2E;
-}
-#mobilemenubtn {
-  /*position: absolute;*/
-  /*top: 15px; */
-  /*right: 15px;*/
-  border: 0;
-  opacity: 0.7;
-  text-indent: 200%;
-  /*overflow: hidden;*/
-  background: rgb(172,172,172) url("../images/hb_menu.png") center no-repeat;
-  /*border: 1px solid #ddd;*/
-  border-radius: 1px;
-  background-size: 80%;
-  width: 30px;
-  height: 30px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s; /*safari*/
-}
-.mobilemenu .expanded {
-      transform: rotate(90deg);
-      -webkit-transform: rotate(90deg); /*safari*/
-      /*transform: skew(10deg,10deg);*/
-      /*background-color: transparent;*/
-      /*border: 0;*/
-}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/*.page-bg {
-  background-image: url("../images/sc_dancing_with_mic-sm.jpg");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  height: 734px;
-  background-attachment: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  position: fixed;
-  background-position: center;
-}*/
-.container { /* center the containers */
+.container { /* centers the containers */
   width: 100%;
   /*margin: 0 auto;*/
   /*min-width: 200px;*/
 }
-hr {
+hr { /* added just for horizontal line testing */
   display: none;
   margin: 10px;
   /*border-color: #606161;*/
@@ -217,31 +132,30 @@ footer img {
 /* MOBILE LAYOUTS
 /*******************************************/
 
-/*START page styles for 768px*/
-/*@media screen and (max-width: 768px) {
-  .mobilemenu {
-    display: block;
-  }
-  .desktopmenu {
-    display: none;
-  }
-}*/
-
-/*START page styles for 480px*/
-@media screen and (max-width: 480px) {
-/*  #mobilemenubtn {
-    width: 25px;
-    height: 25px;
-  }*/
-  .desktopmenu ul {
-    text-align: center;
-
-  }
+/****START page styles for 768px****/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+    /*background-image: url("");*/
+    /*background-color: #D9D9D9;*/
+    /*background-color: #e7e7e7;*/
+    /*background-color: #D3D3D5;*/
+    }
+  /*header {
+      background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-position: center;
+      background-size: cover;  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      opacity: 1;
+    }*/
   .desktopmenu li {
-    margin: 8px 0 0 0;
+    font-size: 13px;
   }
   footer.container {
-  margin-top: 90px;
+    margin-top: 90px;
   }
   footer p {
     font-size: 10px;
@@ -250,5 +164,35 @@ footer img {
     width: 55px;
     height: 127px;
   }
+}
 
+/****START page styles for 480px****/
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("");
+    /*background-color: #D9D9D9;*/
+    font-size: 3.5vw;
+  }
+
+/*  #mobilemenubtn {
+    width: 25px;
+    height: 25px;
+  }*/
+  .desktopmenu ul {
+    text-align: center;
+  }
+  .desktopmenu li {
+    margin: 8px 0 0 0;
+    font-size: 4vw;
+  }
+  footer.container {
+    margin-top: 90px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer img {
+    width: 55px;
+    height: 127px;
+  }
 }
