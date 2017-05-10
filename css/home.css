@@ -1,0 +1,154 @@
+/******************************************
+/* ADJUSTMENTS ONLY FOR INDEX.HTML HOMEPAGE
+/*******************************************/
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* The Modal .container (background) */
+#bio {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(217,213,210); /* Fallback color */
+    /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 50px;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0;
+    padding-right: 25px;
+    margin: 0;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+header {
+  padding: 7% 0 0 0;
+  /*height: 100vh;*/
+}
+#scrolldowntxt {
+  display: none;
+}
+#downbtn {
+  position: absolute;
+  bottom: 30px;
+  height: 45px;
+  width: 35px;
+  text-align: center;
+  margin: 0 50% 0 50%;
+}
+#bio.container {
+  text-align: center;
+  margin: 200px 0 0 0;
+}
+#bio img {
+  width: 80%;
+  opacity: 0.3;
+}
+#quote {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 170px 28% 0 28%;
+}
+#biotxt {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0 25% 0 25%;
+}
+#video.container {
+  margin: 175px 0 0 0;
+}
+#video div {
+  width: 30%;
+  height: auto;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+#photos.container {
+  margin: 175px 0 0 0;
+}
+#photos {
+  text-align: center;
+}
+#photos img {
+  max-width:40%;
+  height: auto;
+}
+#photos p {
+  font-size: 
+}
+
+/******************************************
+/* MOBILE LAYOUTS
+/*******************************************/
+
+/****START page styles for 768px****/
+@media screen and (max-width: 768px) {
+  /*#video.container {
+    margin: 175px 0 0 0;
+  }*/
+  
+  #bio.container {
+    margin: 0;
+  }
+  #quote{
+    padding: 50px 20% 0 20%;
+    font-size: 2vw;
+  }
+  #biotxt{
+    padding: 0 18% 50px 18%;
+    font-size: 2vw;
+  }
+  #video.container{
+    margin-top: 75px;
+  }
+  #video div {
+    width: 50%;
+  }
+  #photos img {
+    max-width:40%;
+  }
+}
+
+/****START page styles for 480px****/
+@media screen and (max-width: 480px) {
+  #quote{
+    padding: 50px 22% 0 22%;
+    font-size: 3.5vw;
+  }
+  #biotxt{
+    padding: 0 20% 50px 20%;
+    font-size: 3.5vw;
+  }
+  #video.container{
+    margin-top: 40px;
+  }
+  #video div {
+    width: 65%;
+  }
+  #photos img {
+    max-width: 70%;
+  }
+}

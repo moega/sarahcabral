@@ -51,14 +51,19 @@ Author: Moe Shahheidari
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 body {
-  /*background-color: #606161;*/ /*for testing*/
-  background-color: #000;
-  color: #606161;
-  font-size: 22px;
+  background-image: url("../images/sc_dancing_with_mic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  /*background-color: red;*/ /*for testing*/
+  color: black;
+  font-size: 16px;
   line-height: 1.4;
-  font-family: 'typewriter','Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'typewriter','bebasneue','Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 a {
@@ -66,7 +71,8 @@ a {
   color: inherit;
 }
 .button {
-  background-color: #507A47;
+  /*background-color: #DF7401;*/
+  background-color: #EBEBEA;
   padding: 20px 45px;
   border-radius: 5px;
   border: 0;
@@ -79,176 +85,119 @@ a {
 /*******************************************/
 .desktopmenu ul {
   /*background-color: #000;*/
-  position: absolute;
+  /*position: absolute;
   z-index: 1;
-  width: 100%;
-  text-align: center;
-  color: #ACACAC;
+  width: 100%;*/
+  text-align: left;
+  /*margin-top: 2%;*/
+  /*color: #ACACAC;*/
 }
 .desktopmenu li {
-  display: inline;
-  margin-left: 25px;
-  opacity: 1;
-  transition: opacity .3s ease-in-out;
+  /*display: inline;*/
+  margin: 10px 0 0 100px;
+  /*transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
-  -webkit-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;*/
 }
 .desktopmenu li:hover {
-  opacity: 0.4;
-}
-.fixedmenu {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-.fixedmenu ul {
-  background: #000;
-}
-.fixedmenu li {
-  color: #606161;
-  font-weight: normal;
-}
-.mobilemenu {
-  display: none;
-  position: fixed;
-  width: 100%;
-  /*top: 0;*/
-  z-index: 1;
-  margin-left: 10px;
-}
-.mobilemenu div {
-  display: none;
-  /*padding-top: 25px;*/
-}
-.mobilemenu a {
-  display: block;
-  padding-top: 10px;
-}
-#mobilemenubtn {
-  /*position: absolute;*/
-  /*top: 15px; */
-  /*right: 15px;*/
-  border: 0;
-  opacity: 0.7;
-  text-indent: 200%;
-  /*overflow: hidden;*/
-  background: rgb(172,172,172) url("../images/hb_menu.png") center no-repeat;
-  /*border: 1px solid #ddd;*/
-  border-radius: 1px;
-  background-size: 80%;
-  width: 30px;
-  height: 30px;
-  -webkit-transition: all 0.3s; /*safari*/
-  transition: all 0.3s;
-}
-.mobilemenu .expanded {
-      -webkit-transform: rotate(90deg); /*safari*/
-      transform: rotate(90deg);
-      /*transform: skew(10deg,10deg);*/
-      /*background-color: transparent;*/
-      /*border: 0;*/
+  opacity: 0.08;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-.container { /* center the containers */
+.container { /* centers the containers */
   width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
+  /*margin: 0 auto;*/
   /*min-width: 200px;*/
 }
-header.container {
-  padding: 0 0 25px 0;
-}
-header img {
-  opacity: 0.4;
-}
-#buy img {
-  width: 60%;
-  padding-left: 10%;
-}
-#buy h3{
-  position: absolute;
-  font-size: 20px;
-  width: 45%;
-  padding-top: 40px;
-  padding-left: 13%;
-  z-index: 0;
-}
-.buymenu {
-  position: relative;
-  /*left: 100px;*/ 
-  left: 6%;
-  top: 75px;
-  vertical-align: top;
-  display: inline-block;
-}
-.buymenu div {
+hr { /* added just for horizontal line testing */
   display: none;
-  text-align: center;
-}
-.buymenu a {
-  display: block;
-  padding-top: 10px;
-  font-size: 20px;
-}
-#audio div {
-  vertical-align: top;
-  width: 45%;
-  display: inline-block;
-  text-align: center;
-  padding-left: 6%;
-  text-align: center;
-}
-#audio h2 {
-  font-family: 'bebasneue';
-  font-size: 40px;
-  color: #507A47;
-}
-#audio p {
-  font-size: 16px;
-}
-#video iframe {
-  margin-left: 4.5%;
-  vertical-align: top;
-}
-#shows {
-  display: none;
-}
-footer.container {
-  padding: 0 0 50px 0;
+  margin: 10px;
+  /*border-color: #606161;*/
+  border-color: #E7E7E7; 
+  background-color: #606161; /*firefox*/
+  color: #606161; /*IE*/
 }
 footer {
+  margin: 175px 0 0 0;
   text-align: center;
 }
-footer li {
-  font-size: 16px;
-  display: inline-block;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  color: #507A47;
-}
-footer p {
-  font-size: 13px;
-  
+footer img {
+    width: 105px;
+    height: 217px;
 }
 
 /******************************************
 /* MOBILE LAYOUTS
 /*******************************************/
 
+/****START page styles for 768px****/
 @media screen and (max-width: 768px) {
-  
-  .mobilemenu {
-    display: block;
+  body {
+    background-image: url("../images/sc_mic_blush_mobile_test.jpg");
+    font-size: 2.5vw;
   }
-  .desktopmenu {
+  #testbg {
+    background-color: rgba(255,255,255,0.5);
+    background-image: url("");
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+  body {
+    /*font-size: 14px;*/
+    /*background-image: url("");*/
+    /*background-color: #D9D9D9;*/
+    /*background-color: #e7e7e7;*/
+    /*background-color: #D3D3D5;*/
+    }
+  /*header {
+      background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-position: center;
+      background-size: cover;  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      opacity: 1;
+    }*/
+  .desktopmenu ul {
+    text-align: center;
+  }
+  .desktopmenu li {
+    margin: 8px 0 0 0;
+  }
+  #bio img {
     display: none;
   }
-  #buy h3{
-    font-size: 16px;
+  #bio {
+    background-color: white;
   }
+  #photos p {
+    font-size: 12px;
+  }
+  footer {
+    margin-top: 90px;
+  }
+  footer p {
+    font-size: 8px;
+  }
+  footer img {
+    display: none;
+  }
+}
 
+/****START page styles for 480px****/
+@media screen and (max-width: 480px) {
+  .desktopmenu li {
+    margin: 8px 0 0 0;
+    font-size: 4.5vw;
+  }  
 }
