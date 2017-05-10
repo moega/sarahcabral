@@ -135,9 +135,10 @@ footer img {
 /****START page styles for 768px****/
 @media screen and (max-width: 768px) {
   body {
-    background-image: url("../images/sc_mic_blush_mobile_test.jpg");
+    background-image: url("../images/sc_mic_blush.jpg");
     font-size: 10px;
   }
+
   body {
     /*font-size: 14px;*/
     /*background-image: url("");*/
