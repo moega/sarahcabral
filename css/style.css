@@ -127,6 +127,9 @@ footer img {
     width: 105px;
     height: 217px;
 }
+footer p {
+    font-size: 12px;
+}
 
 /******************************************
 /* MOBILE LAYOUTS
@@ -170,6 +173,7 @@ footer img {
     }*/
   .desktopmenu ul {
     text-align: center;
+    font-size: 2.3vw;
   }
   .desktopmenu li {
     margin: 8px 0 0 0;
@@ -180,14 +184,11 @@ footer img {
   #bio {
     background-color: white;
   }
-  #photos p {
-    font-size: 12px;
-  }
   footer.container {
     margin-top: 90px;
   }
   footer p {
-    font-size: 10px;
+    font-size: 9px;
   }
   footer img {
     width: 55px;
@@ -197,15 +198,14 @@ footer img {
 
 /****START page styles for 480px****/
 @media screen and (max-width: 480px) {
+  .desktopmenu ul {
+    font-size: 4vw;
+  }
   .desktopmenu li {
     margin: 8px 0 0 0;
-    font-size: 4.5vw;
   }  
   footer.container {
     margin-top: 90px;
-  }
-  footer p {
-    font-size: 10px;
   }
   footer img {
     width: 55px;

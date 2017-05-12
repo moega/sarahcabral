@@ -49,11 +49,6 @@
     cursor: pointer;
 }
 
-
-
-
-
-
 /*.page-bg {
   background-image: url("../images/sc_dancing_with_mic-sm.jpg");
   background-size: cover;
@@ -91,15 +86,14 @@ header.container {
   width: 80%;
   opacity: 0.3;
 }
-#quote {
-  text-align: center;
-  font-size: 1.5vw;
-  padding: 170px 28% 0 28%;
-}
 #biotxt {
+  margin-top:175px;
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   padding: 0 25% 0 25%;
+}
+#biotxt a {
+  font-weight: bold;
 }
 /*********************************/
 /*********************************/
@@ -178,17 +172,18 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   padding-top: 50px;
 }
 #photos.container {
-  margin: 175px 0 0 0;
+  margin: 275px 0 0 0;
 }
 #photos {
   text-align: center;
 }
 #photos img {
-  max-width:40%;
+  /*margin-top:50px;*/
+  max-width:30%;
   height: auto;
 }
 #photos p {
-  font-size: 
+  font-size:10px; 
 }
 
 /******************************************
@@ -204,13 +199,9 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   #bio.container {
     /*margin-top: 100px;*/
   }
-  #quote{
-    padding: 50px 20% 0 20%;
-    font-size: 2vw;
-  }
   #biotxt{
-    padding: 0 18% 50px 18%;
-    font-size: 2vw;
+    padding: 50px 18% 50px 18%;
+    font-size: 1.8vw;
   }
   #video.container{
     margin-top: 75px;
@@ -218,8 +209,14 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
   #video div {
     width: 50%;
   }
+  #photos.container {
+    margin: 150px 0 0 0;
+  }
   #photos img {
     max-width:40%;
+  }
+  #photos p {
+    font-size: 9px;
   }
 }
 
@@ -231,13 +228,9 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
 /*  #bio img {
     display: none;
   }*/
-  #quote{
-    padding: 50px 22% 0 22%;
-    font-size: 3.5vw;
-  }
   #biotxt{
-    padding: 0 20% 50px 20%;
-    font-size: 3.5vw;
+    padding: 50px 20% 50px 20%;
+    font-size: 3vw;
   }
   #video.container{
     margin-top: 40px;
@@ -246,6 +239,7 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
     width: 65%;
   }
   #photos img {
-    max-width: 70%;
+    max-width:50%;
   }
+  
 }
