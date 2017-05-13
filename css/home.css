@@ -196,11 +196,18 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
     margin: 175px 0 0 0;
   }*/
   
-  #bio.container {
-    /*margin-top: 100px;*/
+  #bio.container{
+    width: 80%;
+    margin: auto;
+  }
+  #bio {
+    background-color: #d7d2d0;
+  }
+  #bio img {
+    display: none;
   }
   #biotxt{
-    padding: 50px 18% 50px 18%;
+    padding: 30px 7% 30px 7%;
     font-size: 1.8vw;
   }
   #video.container{
@@ -229,7 +236,7 @@ AUDIO SECTION, BUY SECTION, MENU BUTTONS AND CODE REMOVED - CSS ABOVE*/
     display: none;
   }*/
   #biotxt{
-    padding: 50px 20% 50px 20%;
+    /*padding: 50px 20% 50px 20%;*/
     font-size: 3vw;
   }
   #video.container{

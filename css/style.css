@@ -178,12 +178,6 @@ footer p {
   .desktopmenu li {
     margin: 8px 0 0 0;
   }
-  #bio img {
-    display: none;
-  }
-  #bio {
-    background-color: white;
-  }
   footer.container {
     margin-top: 90px;
   }
