@@ -94,7 +94,7 @@ a {
 }
 .desktopmenu li {
   /*display: inline;*/
-  margin: 10px 0 0 100px;
+  margin: 10px 0 0 10%;
   /*transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
   -webkit-transition: opacity .3s ease-in-out;*/
