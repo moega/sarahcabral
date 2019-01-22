@@ -1,0 +1,208 @@
+/*
+Project Name: Sarah Cabral
+Author: Moe Shahheidari
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Linking to custom fonts */
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/mariotext_iceland-webfont.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bebasneue';
+    src: url('../fonts/bebasneue.otf'); /*URL to font*/
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  background-image: url("../images/sc_dancing_with_mic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  /*background-color: red;*/ /*for testing*/
+  color: black;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'typewriter','bebasneue','Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  /*background-color: #DF7401;*/
+  background-color: #EBEBEA;
+  padding: 20px 45px;
+  border-radius: 5px;
+  border: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/******************************************
+/* MENU STYLES
+/*******************************************/
+.desktopmenu ul {
+  /*background-color: #000;*/
+  /*position: absolute;
+  z-index: 1;
+  width: 100%;*/
+  text-align: left;
+  /*margin-top: 2%;*/
+  /*color: #ACACAC;*/
+}
+.desktopmenu li {
+  /*display: inline;*/
+  margin: 10px 0 0 10%;
+  /*transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;*/
+}
+.desktopmenu li:hover {
+  opacity: 0.08;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container { /* centers the containers */
+  width: 100%;
+  /*margin: 0 auto;*/
+  /*min-width: 200px;*/
+}
+hr { /* added just for horizontal line testing */
+  display: none;
+  margin: 10px;
+  /*border-color: #606161;*/
+  border-color: #E7E7E7; 
+  background-color: #606161; /*firefox*/
+  color: #606161; /*IE*/
+}
+footer.container {
+  margin: 175px 0 0 0;
+  text-align: center;
+}
+footer img {
+    width: 105px;
+    height: 217px;
+}
+footer p {
+    font-size: 12px;
+}
+
+/******************************************
+/* MOBILE LAYOUTS
+/*******************************************/
+
+/****START page styles for 768px****/
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../images/sc_mic_blush_mobile_test.jpg");
+    font-size: 2.5vw;
+  }
+  #testbg {
+    background-color: rgba(255,255,255,0.5);
+    background-image: url("");
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+  body {
+    /*font-size: 14px;*/
+    /*background-image: url("");*/
+    /*background-color: #D9D9D9;*/
+    /*background-color: #e7e7e7;*/
+    /*background-color: #D3D3D5;*/
+    }
+  /*header {
+      background-image: url("../images/sc_dancing_with_mic-mobile.jpg");
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-position: center;
+      background-size: cover;  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      opacity: 1;
+    }*/
+  .desktopmenu ul {
+    text-align: center;
+    font-size: 2.3vw;
+  }
+  .desktopmenu li {
+    margin: 8px 0 0 0;
+  }
+  footer.container {
+    margin-top: 90px;
+  }
+  footer p {
+    font-size: 9px;
+  }
+  footer img {
+    width: 55px;
+    height: 127px;
+  }
+}
+
+/****START page styles for 480px****/
+@media screen and (max-width: 480px) {
+  .desktopmenu ul {
+    font-size: 4vw;
+  }
+  .desktopmenu li {
+    margin: 8px 0 0 0;
+  }  
+  footer.container {
+    margin-top: 90px;
+  }
+  footer img {
+    width: 55px;
+    height: 127px;
+  }
+}
